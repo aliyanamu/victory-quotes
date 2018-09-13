@@ -1,0 +1,53 @@
+body {
+    padding-top: 65px;
+}
+
+.navbar-right p {
+    float: right;
+    line-height: 50px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.row {
+    display: flex;
+
+}
+
+.row > div {
+    flex: 1;
+    /* border: 1px solid grey; */
+    margin-top:10px;
+}
+
+.row-body {
+    height: 100vw;
+}
+
+.row-body .box {
+    border-right: 1px solid #eee;
+}
+
+.row-body div:last-child {
+    border-right: none;
+}
+
+input.search {
+    margin-bottom: 10px;
+}
+
+#modal-login {
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 40%;
+    padding: 50px 10px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 1000000;
+    left: 40%;
+    width: 300px;
+    height: 200px;
+}

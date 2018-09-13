@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="navbar bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Livecode1</a>
+      <div class="header-right" id="login-box">
+        <input type="text" v-model="input.username" id="email" placeholder="email">
+        <input type="password" v-model="input.password" id="password" placeholder="password">
+        <button onclick="login($('#email').val(), $('#password').val())">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container container-content">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item">All Quotes</a>
+        </div>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-lg-9 col-sm-9 portfolio-item">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Quotes"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h4>
+                <a href="#">Delete</a> | <a href="#">Translate</a>
+                <p class="translate font-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h4>
+                <a href="#">Delete</a> | <a href="#">Translate</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h4>
+                <a href="#">Delete</a> | <a href="#">Translate</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h4>
+                <a href="#">Delete</a> | <a href="#">Translate</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-6 portfolio-item">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h4>
+                <a href="#">Delete</a> | <a href="#">Translate</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="auth.js"></script>
+
+</body>
+
+</html>
